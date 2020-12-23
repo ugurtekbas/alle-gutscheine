@@ -28,9 +28,7 @@
         <link rel="icon" href="../images/fav-icon.ico" />
         <!-- Favicons -->
 
-        <!--build:css ../css/styles.min.css-->
         <link href="../css/styles.min.css" rel="stylesheet" />
-        <!--endbuild-->
     </head>
     <body>
         <div class = "header-container">
@@ -91,15 +89,18 @@
                 <img class="card-bang-image" src="../images/bang_up.png" >
 
                 <div class="card-bang-code"> 
-                    <span onclick="openGetSafeLink()" class="card-bang-code-link-text"> 
+                    <a 
+                        id="promoLink" 
+                        class="card-bang-code-link-text" 
+                        href="https://www.hellogetsafe.com/en-de/referral?n=Ugur&r=8REF-8MW8&s=1"
+                        target="_blank"
+                        rel="noreferrer"
+                        onClick="onRefLinkClicked('GetSafe');">
                         <span>&#128279 </span>
-                        <a 
-                            href="https://www.hellogetsafe.com/en-de/referral?n=Ugur&r=8REF-8MW8&s=1">
-                            https://www.hellogetsafe.com/...
-                        </a>
-                    </span> 
+                        https://www.hellogetsafe.com/...
+                    </a>
                 </div>
-                
+
                 <img class="card-bang-image" src="../images/bang_down.png">
             </div>
 
@@ -109,14 +110,31 @@
                 15 € für Ihre erste Versicherung!
             </div>
             <div class="card-main-header-medium">
-                <span class="card-link"><a onclick="gtag('event', 'GetSafe link click', { 'event_category': 'Link click', 'event_label': 'GetSafe-Text-Link', 'value': 1 })" href="https://www.hellogetsafe.com"> GetSafe</a></span> ist eine Versicherungsgesellschaft der neuen Generation und bietet eine Vielzahl von Versicherungen zum perfekten Preis ohne Papierkram.
+                <span class="card-link">
+                    <a 
+                        onclick="onWebsiteLinkClicked('GetSafe')" 
+                        href="https://www.hellogetsafe.com"
+                        target="_blank"
+                        rel="noreferrer"> 
+                        GetSafe
+                    </a>
+                </span> ist eine Versicherungsgesellschaft der neuen Generation und bietet eine Vielzahl von Versicherungen zum perfekten Preis ohne Papierkram.
             </div>
             <div class="card-main-header-small">
                 Klicken Sie auf den Link oben und erhalten Sie 15 € für Ihre erste Versicherung.</p>
             </div>
 
             <div class="card-main-header-normal" style="margin-top: 20px; line-height:1.5em;"> 
-                Haftung, Haushaltsgegenstände, Rechtsschutz und mehr: Bei <span class="card-link"><a onclick="gtag('event', 'GetSafe link click 2', { 'event_category': 'Link click', 'event_label': 'GetSafe-Text-Link-2', 'value': 1 })" href="https://www.hellogetsafe.com/en-de/referral?n=Ugur&r=8REF-8MW8&s=1"> GetSafe</a></span> finden Sie alle Versicherungen, die wir derzeit anbieten.
+                Haftung, Haushaltsgegenstände, Rechtsschutz und mehr: Bei 
+                <span class="card-link">
+                    <a 
+                        onclick="onRefLinkClicked('GetSafe');"
+                        href="https://www.hellogetsafe.com/en-de/referral?n=Ugur&r=8REF-8MW8&s=1"
+                        target="_blank"
+                        rel="noreferrer"> 
+                        GetSafe
+                    </a>
+                </span> finden Sie alle Versicherungen, die wir derzeit anbieten.
                 All deine Versicherungsunterlagen findest du in der Getsafe App. Ausdrucken, einordnen, suchen – das gehört ab jetzt der Vergangenheit an.
                 Werde Teil einer Gemeinschaft von mehr als 100.000 Kunden. Hol dir noch heute deinen umfassenden Schutz.
             </div>
@@ -165,15 +183,6 @@
             </div>
         </div>
         
-        <!--build:js js/main.min.js -->
-        <script>
-            function openGetSafeLink() {
-                console.log('hey');
-                gtag('event', 'GetSafe website click', { 'event_category': 'Link click', 'event_label': 'GetSafe-Website-Link', 'value': 1 })
-                window.open("https://www.hellogetsafe.com/en-de/referral?n=Ugur&r=8REF-8MW8&s=1", "_top");
-            }
-        </script>
-        <!-- <script src="../js/cookie.min.js"></script> -->
-        <!-- endbuild -->
+        <script src="../js/cookie.min.js"></script>
     </body>
 </html>

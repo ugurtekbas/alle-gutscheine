@@ -28,9 +28,7 @@
         <link rel="icon" href="images/fav-icon.ico" />
         <!-- Favicons -->
 
-        <!--build:css css/styles.min.css-->
         <link href="../css/styles.min.css" rel="stylesheet" />
-        <!--endbuild-->
     </head>
     <body>
         <div class = "header-container">
@@ -68,7 +66,7 @@
 
                 <div class="card-bang-code"> 
                     <span id="promoCode" class="card-bang-code-text">JORDAN-RGCG</span> 
-                    <span class="card-bang-code-button" onclick="copyTheCode()">Copy</span> 
+                    <span class="card-bang-code-button" onclick="copyTheCode('MyProtein')">Copy</span> 
                 </div>
                 
                 <img class="card-bang-image" src="../images/bang_down.png">
@@ -89,15 +87,37 @@
             </div>
 
             <div class="card-bang-code"> 
-                <span onclick="openRefLink()" class="card-bang-code-link-text"> <span>&#128279 </span>
-                    <a id="promoLink" href="https://de.myprotein.com/referrals.list?applyCode=JORDAN-RGCG">
-                        https://de.myprotein.com/reference...
-                    </a>
-                </span> 
+
+                <a 
+                    id="promoLink" 
+                    class="card-bang-code-link-text" 
+                    href="https://de.myprotein.com/referrals.list?applyCode=JORDAN-RGCG"
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick="onRefLinkClicked('MyProtein');">
+                    <span>&#128279 </span>
+                    https://de.myprotein.com/reference...
+                </a>
+                
             </div>
 
             <div class="card-main-header-normal"> 
                 35% Rabatt auf deine erste Bestellung wird automatisch im Warenkorb abgezogen wenn du mehr als 35€ ausgibst.
+            </div>
+
+            <div class="card-main-header-small">
+                <span class="card-link">
+                    <a 
+                        onclick="onWebsiteLinkClicked('MyProtein')" 
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://de.myprotein.com/"
+                        >
+                        MyProtein
+                    </a>
+                </span> 
+                ist die führende Sportnahrung Marke mit einer riesigen Range an Protein Pulvern,Vitaminen und Mineralstoffen, Super Foods, Snack Alternativen und Performance Kleidung.
+                Gegründet in 2004, ist Myprotein zu Europa´s Nr.1 geworden. Myprotein operiert in mehr als 70 Ländern mit einem motivierten Team aus Angestellten, Influencern und Athleten. 
             </div>
             
         </div>
@@ -144,11 +164,7 @@
             </div>
         </div>
         
-        <!--build:js js/main.min.js -->
-        <script src="../js/script.js"></script>
-        <!-- endbuild -->
-        <!--build:js js/cookie.min.js 
-        <script src="js/cookie.js"></script> -->
-        <!-- endbuild -->
+        <script src="../js/main.min.js"></script>
+        <script src="../js/cookie.min.js"></script>
     </body>
 </html>

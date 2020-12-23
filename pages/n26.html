@@ -28,9 +28,9 @@
         <link rel="icon" href="images/fav-icon.ico" />
         <!-- Favicons -->
 
-        <!--build:css css/styles.min.css-->
+        
         <link href="../css/styles.min.css" rel="stylesheet" />
-        <!--endbuild-->
+        
     </head>
     <body>
         <div class = "header-container">
@@ -80,8 +80,8 @@
                 <img class="card-bang-image" src="../images/bang_up.png" >
 
                 <div class="card-bang-code"> 
-                    <span id="promoCode" class="card-bang-code-text">ethemo1101</span> 
-                    <span class="card-bang-code-button" onclick="copyTheCode()">Copy</span> 
+                    <span id="promoCode" class="card-bang-code-text">ugurt2318</span> 
+                    <span class="card-bang-code-button" onclick="copyTheCode('N26')">Copy</span> 
                 </div>
                 
                 <img class="card-bang-image" src="../images/bang_down.png">
@@ -100,11 +100,22 @@
             <div class="card-main-header-small">
                 Oder klicken Sie auf den Link unten und melden Sie sich an.</p>
             </div>
+
             <div class="card-bang-code"> 
-                <span onclick="openRefLink()" class="card-bang-code-link-text"> <span>&#128279 </span>
-                    <a id="promoLink" href="https://n26.com/r/ethemo1101">https://n26.com/reference...</a>
-                </span> 
+
+                <a 
+                    id="promoLink" 
+                    class="card-bang-code-link-text" 
+                    href="https://n26.com/r/ugurt2318"
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick="onRefLinkClicked('N26');">
+                    <span>&#128279 </span>
+                    https://n26.com/reference...
+                </a>
+                
             </div>
+
             <div class="card-main-header-normal"> 
                 Sobald Sie Ihre erste Zahlung mit Ihrer N26-Karte getätigt haben, werden 30 Euro auf ihr Konto überwiesen.
             </div>
@@ -155,14 +166,10 @@
             </div>
         </div>
         
-        <!--build:js js/main.min.js -->
-        <script src="../js/script.js"></script>
-        <!-- endbuild -->
+        <script src="../js/main.min.js"></script>
+        <script src="../js/cookie.min.js"></script>
         <!--build:js js/bank.min.js -->
-        <script src="../js/bank.js"></script> 
-        <!-- endbuild -->
-        <!--build:js js/cookie.min.js 
-        <script src="js/cookie.js"></script> -->
+        <script src="../js/bank.min.js"></script>
         <!-- endbuild -->
     </body>
 </html>

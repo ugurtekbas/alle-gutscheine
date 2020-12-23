@@ -28,9 +28,7 @@
         <link rel="icon" href="images/fav-icon.ico" />
         <!-- Favicons -->
 
-        <!--build:css css/styles.min.css-->
         <link href="../css/styles.min.css" rel="stylesheet" />
-        <!--endbuild-->
     </head>
     <body>
         <div class = "header-container">
@@ -65,15 +63,18 @@
             
             <div class="card-bang">
                 <img class="card-bang-image" src="../images/bang_up.png" >
-
+                
                 <div class="card-bang-code"> 
-                    <span onclick="openAirbnbLink()" class="card-bang-code-link-text"> 
+                    <a 
+                        id="promoLink" 
+                        class="card-bang-code-link-text" 
+                        href="https://www.hellofresh.de/pages/raf_lp11?c=HS-PIL7M9812&utm_source=raf-share&utm_medium=referral&utm_campaign=clipboard&utm_couponvalue=20&utm_invitername=Ugur"
+                        target="_blank"
+                        rel="noreferrer"
+                        onClick="onRefLinkClicked('HelloFresh');">
                         <span>&#128279 </span>
-                        <a 
-                            href="https://www.hellofresh.de/pages/raf_lp11?c=HS-PIL7M9812&utm_source=raf-share&utm_medium=referral&utm_campaign=clipboard&utm_couponvalue=20&utm_invitername=Ugur">
-                            https://www.hellofresh.de/...
-                        </a>
-                    </span> 
+                        https://www.hellofresh.de/...
+                    </a>
                 </div>
                 
                 <img class="card-bang-image" src="../images/bang_down.png">
@@ -90,7 +91,15 @@
                 Klicken Sie einfach auf den Link oben und melden Sie sich an.
             </div>
             <div class="card-main-header-small">
-                <span class="card-link"><a onclick="gtag('event', 'GetSafe link click', { 'event_category': 'Link click', 'event_label': 'GetSafe-Text-Link', 'value': 1 })" href="https://www.hellofresh.de">HelloFresh</a></span> ist die wöchentliche Lösung für eine ausgewogene Ernährung: Mit einer Kochbox voller frischer Zutaten und leckerer Rezepten, direkt nach Hause geliefert - ohne Mindestlaufzeit und Verpflichtungen.
+                <span class="card-link">
+                    <a 
+                        onclick="onWebsiteLinkClicked('HelloFresh')" 
+                        href="https://www.hellofresh.de"
+                        target="_blank"
+                        rel="noreferrer">
+                        HelloFresh
+                    </a>
+                </span> ist die wöchentliche Lösung für eine ausgewogene Ernährung: Mit einer Kochbox voller frischer Zutaten und leckerer Rezepten, direkt nach Hause geliefert - ohne Mindestlaufzeit und Verpflichtungen.
             </div>
             
         </div>
@@ -137,11 +146,7 @@
             </div>
         </div>
         
-        <!--build:js js/main.min.js -->
-        <script src="../js/script.js"></script> 
-        <!-- endbuild -->
-        <!--build:js js/cookie.min.js 
-        <script src="js/cookie.js"></script> -->
-        <!-- endbuild -->
+        <script src="../js/main.min.js"></script> 
+        <script src="../js/cookie.min.js"></script>
     </body>
 </html>

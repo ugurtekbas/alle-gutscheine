@@ -28,9 +28,7 @@
         <link rel="icon" href="images/fav-icon.ico" />
         <!-- Favicons -->
 
-        <!--build:css css/styles.min.css-->
         <link href="../css/styles.min.css" rel="stylesheet" />
-        <!--endbuild-->
     </head>
     <body>
         <div class = "header-container">
@@ -73,15 +71,18 @@
                 <img class="card-bang-image" src="../images/bang_up.png" >
 
                 <div class="card-bang-code"> 
-                    <span onclick="openAirbnbLink()" class="card-bang-code-link-text"> 
+                    <a 
+                        id="promoLink" 
+                        class="card-bang-code-link-text" 
+                        href="https://www.airbnb.com/c/ugurt2"
+                        target="_blank"
+                        rel="noreferrer"
+                        onClick="onRefLinkClicked('Airbnb');">
                         <span>&#128279 </span>
-                        <a 
-                            href="https://www.airbnb.com/c/ugurt2">
-                            https://www.airbnb.com/...
-                        </a>
-                    </span> 
+                        https://www.airbnb.com/...
+                    </a>
                 </div>
-                
+
                 <img class="card-bang-image" src="../images/bang_down.png">
             </div>
 
@@ -97,6 +98,22 @@
             </div>
             <div class="card-main-header-normal"> 
                 Erhalten Sie bis zu 40 € Rabatt auf Ihren ersten Aufenthalt und 10 € für ein Airbnb-Erlebnis von 40 € oder mehr.
+            </div>
+
+            <div class="card-main-header-small">
+                <span class="card-link">
+                    <a 
+                        onclick="onWebsiteLinkClicked('Airbnb')" 
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://www.airbnb.de"
+                        >
+                        Airbnb
+                    </a>
+                </span> 
+                ist eine Community, die auf persönlichen Beziehungen und dem Gefühl basiert, überall zu Hause zu sein. 
+                Es wurde 2008 gegründet, seitdem ist die Community auf vier Millionen Gastgeber angewachsen, die über 800 Millionen Gäste in rund 100.000 Städten in fast allen Ländern und Regionen der Welt begrüßt haben. 
+                Airbnb-Gastgeber sind normale Menschen, die ihre Welt mit anderen teilen, damit sich die Gäste bei ihnen wie zu Hause fühlen können.
             </div>
             
         </div>
@@ -143,11 +160,7 @@
             </div>
         </div>
         
-        <!--build:js js/main.min.js -->
-        <script src="../js/script.js"></script>
-        <!-- endbuild -->
-        <!--build:js js/cookie.min.js 
-        <script src="js/cookie.js"></script> -->
-        <!-- endbuild -->
+        <script src="../js/main.min.js"></script>
+        <script src="../js/cookie.min.js"></script> 
     </body>
 </html>
