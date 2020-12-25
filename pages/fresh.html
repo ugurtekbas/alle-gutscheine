@@ -17,8 +17,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
         <link rel="canonical" href="https://gutscheinmonster.org/pages/fresh.html" />
-        <title>Neueste Gutscheine für Online-Einkäufe | Keine Spielereien Nur Gutscheine</title>
-        <meta name="description" content="Holen Sie sich die neuesten Rabatte und Gutscheine für viele Online-Plattformen. Sparen Sie sofort Geld bei Ihren Einkäufen. Kostenlose, gebrauchsfertige Gutscheine." />
+        <title>Hello Fresh | Geschenk für Neukunden | 20 € für Ihre Kochbox</title>
+        <meta name="description" content="Kostenloser Gutschein für Ihre erste Mahlzeit | Erhalten Sie 20 € mit Ihrer ersten Kochbox bei Hello Fresh." />
 
         <!-- Favicons -->
         <link rel="apple-touch-icon" sizes="76x76" href="../images/apple-touch-icon.png?v=2">
@@ -34,79 +34,83 @@
         <link href="../css/styles.min.css" rel="stylesheet" />
     </head>
     <body>
-        <div class = "header-container">
-            <div class="header">
-                <nav class="container">
-                    <div class="header-logo">
-                        <div class = "link-wrapper">
-                            <a class="header-nav-link" href="../">
-                                Gutschein Monster
-                            </a>
+        <header>
+            <div class = "header-container">
+                <div class="header">
+                    <nav class="container">
+                        <div class="header-logo">
+                            <div class = "link-wrapper">
+                                <a class="header-nav-link" href="../">
+                                    Gutschein Monster
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="header-links">
-                        <div class = "link-wrapper">
-                            <a 
-                                onclick=""
-                                href="../">
-                                Alle Gutscheine anzeigen &#129321
-                            </a>
+                        <div class="header-links">
+                            <div class = "link-wrapper">
+                                <a 
+                                    onclick=""
+                                    href="../">
+                                    Alle Gutscheine anzeigen &#129321
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
             </div>
-        </div>
+        </header>
 
-        <div class="card">
-            <div class="title-fresh">
-                <img src="../images/fresh.png" class="title-fresh-logo">
-            </div>
-            
-            <!--<div class="card-revenue"> <span id="people" style="font-weight: bold;">100</span> Personen &#128105 haben diesen Code verwendet und insgesamt <span id="revenue" style="font-weight: bold;">200</span> &#128182 verdient.</div>-->
-            
-            <div class="card-bang">
-                <img class="card-bang-image" src="../images/bang_up.png" >
-                
-                <div class="card-bang-code"> 
-                    <a 
-                        id="promoLink" 
-                        class="card-bang-code-link-text" 
-                        href="https://www.hellofresh.de/pages/raf_lp11?c=HS-PIL7M9812&utm_source=raf-share&utm_medium=referral&utm_campaign=clipboard&utm_couponvalue=20&utm_invitername=Ugur"
-                        target="_blank"
-                        rel="noreferrer"
-                        onClick="onRefLinkClicked('HelloFresh');">
-                        <span>&#128279 </span>
-                        https://www.hellofresh.de/...
-                    </a>
+        <main class="card">
+            <div>
+                <div class="title-fresh">
+                    <img src="../images/fresh.png" class="title-fresh-logo">
                 </div>
                 
-                <img class="card-bang-image" src="../images/bang_down.png">
-            </div>
+                <!--<div class="card-revenue"> <span id="people" style="font-weight: bold;">100</span> Personen &#128105 haben diesen Code verwendet und insgesamt <span id="revenue" style="font-weight: bold;">200</span> &#128182 verdient.</div>-->
+                
+                <div class="card-bang">
+                    <img class="card-bang-image" src="../images/bang_up.png" >
+                    
+                    <div class="card-bang-code"> 
+                        <a 
+                            id="promoLink" 
+                            class="card-bang-code-link-text" 
+                            href="https://www.hellofresh.de/pages/raf_lp11?c=HS-PIL7M9812&utm_source=raf-share&utm_medium=referral&utm_campaign=clipboard&utm_couponvalue=20&utm_invitername=Ugur"
+                            target="_blank"
+                            rel="noreferrer nofollow"
+                            onClick="onRefLinkClicked('HelloFresh');">
+                            <span>&#128279 </span>
+                            https://www.hellofresh.de/...
+                        </a>
+                    </div>
+                    
+                    <img class="card-bang-image" src="../images/bang_down.png">
+                </div>
 
-            <div id="copyToast" class="card-copy-toast">Code wird kopiert</div>
-            
-            <div class="card-main-vote">&#128077<span style="font-weight: bold;"> 20</span></div>
-            
-            <div class = "card-main-header">
-                Holen Sie sich 20 € auf Ihre Bestellung mit leckerem Essen!
+                <div id="copyToast" class="card-copy-toast">Code wird kopiert</div>
+                
+                <div class="card-main-vote">&#128077<span style="font-weight: bold;"> 20</span></div>
+                
+                <div class = "card-main-header">
+                    Holen Sie sich 20 € auf Ihre Bestellung mit leckerem Essen!
+                </div>
+                <div class="card-main-header-medium">
+                    Klicken Sie einfach auf den Link oben und melden Sie sich an.
+                </div>
+                <div class="card-main-header-small">
+                    <span class="card-link">
+                        <a 
+                            onclick="onWebsiteLinkClicked('HelloFresh')" 
+                            href="https://www.hellofresh.de"
+                            target="_blank"
+                            rel="noreferrer nofollow">
+                            HelloFresh
+                        </a>
+                    </span> ist die wöchentliche Lösung für eine ausgewogene Ernährung: Mit einer Kochbox voller frischer Zutaten und leckerer Rezepten, direkt nach Hause geliefert - ohne Mindestlaufzeit und Verpflichtungen.
+                </div>
+                
             </div>
-            <div class="card-main-header-medium">
-                Klicken Sie einfach auf den Link oben und melden Sie sich an.
-            </div>
-            <div class="card-main-header-small">
-                <span class="card-link">
-                    <a 
-                        onclick="onWebsiteLinkClicked('HelloFresh')" 
-                        href="https://www.hellofresh.de"
-                        target="_blank"
-                        rel="noreferrer">
-                        HelloFresh
-                    </a>
-                </span> ist die wöchentliche Lösung für eine ausgewogene Ernährung: Mit einer Kochbox voller frischer Zutaten und leckerer Rezepten, direkt nach Hause geliefert - ohne Mindestlaufzeit und Verpflichtungen.
-            </div>
-            
-        </div>
-        
+        </main>
+
         <footer class = "footer-container">
             <div class="footer">
                 <nav class="container">
