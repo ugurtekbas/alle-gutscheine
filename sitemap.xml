@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://gutscheinmonster.org/</loc>
+  <lastmod>2020-12-24T11:45:54+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://gutscheinmonster.org/pages/n26.html</loc>
+  <lastmod>2020-12-24T11:45:54+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://gutscheinmonster.org/pages/my-protein.html</loc>
+  <lastmod>2020-12-24T11:45:54+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://gutscheinmonster.org/pages/fresh.html</loc>
+  <lastmod>2020-12-24T11:45:54+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://gutscheinmonster.org/pages/get-safe.html</loc>
+  <lastmod>2020-12-24T11:45:54+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://gutscheinmonster.org/pages/airbnb.html</loc>
+  <lastmod>2020-12-24T11:45:54+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://gutscheinmonster.org/pages/disclaimer.html</loc>
+  <lastmod>2020-12-24T11:45:54+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://gutscheinmonster.org/pages/about.html</loc>
+  <lastmod>2020-12-24T11:45:54+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://gutscheinmonster.org/pages/privacy.html</loc>
+  <lastmod>2020-12-24T11:45:54+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+
+
+</urlset>
