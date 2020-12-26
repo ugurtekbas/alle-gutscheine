@@ -125,7 +125,19 @@
                     Sobald Sie Ihre erste Zahlung mit Ihrer N26-Karte getätigt haben, werden 30 Euro auf ihr Konto überwiesen.
                 </div>
 
-                <div id="disqus_thread" style="margin-top: 30px;"></div>
+                <div class="aff-container">
+                    <a 
+                        id="affLink"
+                        onclick="onAffLinkClicked('N26');" 
+                        href=""
+                        target="_blank"
+                        rel="noreferrer nofollow">
+                        <div class="aff-container-wrapper">
+                            <p id="affTitle" class="aff-container-wrapper-title"> Checkout best rated scale for your kitchen!</p>
+                            <p class="aff-container-wrapper-action"> Schau dir bei Amazon an!</p>
+                        </div>
+                    </a>
+                </div>
                 
             </div>
         </main>
@@ -177,5 +189,9 @@
         <!--build:js js/bank.min.js -->
         <script src="../js/bank.min.js"></script>
         <!-- endbuild -->
+        <!--build:js js/aff.min.js -->
+        <script src="../js/aff.min.js"></script>
+        <!-- endbuild -->
+        <script>setBankProduct();</script>
     </body>
 </html>

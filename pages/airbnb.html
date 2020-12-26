@@ -109,7 +109,7 @@
                 <div class="card-main-header-small">
                     <span class="card-link">
                         <a 
-                            onclick="onWebsiteLinkClicked('Airbnb')" 
+                            onClick="onWebsiteLinkClicked('Airbnb')" 
                             target="_blank"
                             rel="noreferrer nofollow"
                             href="https://www.airbnb.de"
@@ -120,6 +120,20 @@
                     ist eine Community, die auf persönlichen Beziehungen und dem Gefühl basiert, überall zu Hause zu sein. 
                     Es wurde 2008 gegründet, seitdem ist die Community auf vier Millionen Gastgeber angewachsen, die über 800 Millionen Gäste in rund 100.000 Städten in fast allen Ländern und Regionen der Welt begrüßt haben. 
                     Airbnb-Gastgeber sind normale Menschen, die ihre Welt mit anderen teilen, damit sich die Gäste bei ihnen wie zu Hause fühlen können.
+                </div>
+
+                <div class="aff-container">
+                    <a 
+                        id="affLink"
+                        onclick="onAffLinkClicked('Airbnb');" 
+                        href="https://amzn.to/3mR6a43"
+                        target="_blank"
+                        rel="noreferrer nofollow">
+                        <div class="aff-container-wrapper">
+                            <p id="affTitle" class="aff-container-wrapper-title">Sehen Sie sich die bestbewertete Pass Brieftasche für Ihre Reise an.</p>
+                            <p class="aff-container-wrapper-action"> Schau dir bei Amazon an!</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </main>
@@ -168,5 +182,7 @@
         
         <script src="../js/main.min.js"></script>
         <script src="../js/cookie.min.js"></script> 
+        <script src="../js/aff.min.js"></script>
+        <script>setAirbnbProduct();</script>
     </body>
 </html>
