@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Global site tag (gtag.js) - Google Analytics 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-536TXLCHVV"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -10,14 +10,14 @@
 
             gtag('config', 'G-536TXLCHVV', { 'anonymize_ip': true, 'allow_google_signals': false, 'allow_ad_personalization_signals': false });
         </script>
-        
+        -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="canonical" href="https://gutscheinmonster.org/pages/trade-republic.html" />
         <title>Trade Republic | Geschenk für Neukunden | 15 € Gutscheincode zu verwenden</title>
         <meta name="description" content="Kostenloser Gutschein für Ihr Anlagekonto | Erhalten Sie 15 € für Ihre erste Investition bei Trade Republic | Sie können provisionsfrei in Aktien, ETFs und Derivate investieren." />
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
         
         <!-- Favicons -->
@@ -66,7 +66,7 @@
                             class="card-title-logo-trade-republic"
                         >
                 </div>
-                <div class="card-revenue"> <span id="people" style="font-weight: bold;">20</span> Personen &#128105 haben diesen Code verwendet und insgesamt  <span id="revenue" style="font-weight: bold;">300</span> &#128182 verdient.</div>
+                <div class="card-revenue"> <span id="people" style="font-weight: bold;">26</span> Personen &#128105 haben diesen Code verwendet und insgesamt  <span id="revenue" style="font-weight: bold;">780</span> &#128182 verdient.</div>
                 <div class="card-bang">
                     <img class="card-bang-image" src="../images/bang_up.png" >
 
@@ -113,7 +113,7 @@
                     <br>Ohne Depotgebühr.
                     <br>Keine Negativzinsen.
                 </div>
-
+                <!--
                 <div class="aff-container">
                     <a 
                         id="affLink"
@@ -126,6 +126,42 @@
                             <p class="aff-container-wrapper-action">Schauen Sie sich bei Amazon an!</p>
                         </div>
                     </a>
+                </div>
+                -->
+                <div class="in-page-ns-form">
+                    <div id="form-wrapper" class="in-page-ns-form-wrapper">
+                        <p id="ns-title" class="in-page-ns-form-wrapper-title">Hör auf mehr zu bezahlen!</p>
+                        <p id="ns-subtitle" class="in-page-ns-form-wrapper-subtitle">Erhalten Sie einmal im Monat exklusive Gutscheincodes für Ihre E-Mail und zahlen Sie weniger für Ihre Online-Einkäufe.</p>
+                        
+                        <p id="ns-error" class="generic-error">Das hat leider nicht geklappt. Versuchs bitte noch einmal.</p>
+                        <p id="ns-email-error" class="generic-error">Diese Email scheint ungültig zu sein. Bitte überprüfe sie und probiere es nochmal.</p>
+                        <form id="ns-form">
+                            <input id="ns-email-input" class="ns-email" placeholder="anne@ichwillgutschein.com" name="EMAIL" type="email">
+                            <button id="ns-signup-btn" type="button" class="ns-sign-up" onclick="onSignupClick();"><span>Sende mir Codes</span></span></button> 
+                        </form>
+                        
+                        <p class="in-page-ns-form-wrapper-title-link">
+                            Die 
+                            <span class="newsletter-link">
+                                <a 
+                                    onclick="" 
+                                    target="_blank"
+                                    href="./privacy.html"
+                                    > 
+                                    Datenschutzbestimmungen 
+                            </a>
+                            </span>
+                            habe ich zur Kenntnis genommen.
+                        </p>
+                    </div>
+
+                    <div id="success-section" class="success-animation">
+                        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                            <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                        </svg>
+                        <p class="in-page-ns-form-wrapper-title">Danke fürs Abonnieren</p>
+                    </div>
                 </div>
             </div>
         </main>
@@ -175,6 +211,9 @@
         <script src="../js/main.min.js"></script>
         <script src="../js/cookie.min.js"></script>
         <script src="../js/aff.min.js"></script>
-        <script>setTradeProduct();</script>
+        <!--build:js js/newsletter.min.js -->
+        <script src="../js/newsletter.min.js"></script>
+        <!-- endbuild -->
+        <!-- <script>setTradeProduct();</script> -->
     </body>
 </html>
