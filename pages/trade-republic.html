@@ -68,23 +68,35 @@
                         >
                 </div>
                 <div class="card-revenue"> <span id="people" style="font-weight: bold;">26</span> Personen &#128105 haben diesen Code verwendet und insgesamt  <span id="revenue" style="font-weight: bold;">780</span> &#128182 verdient.</div>
-                <div class="card-bang">
-                    <img class="card-bang-image" src="../images/bang_up.png" >
+                <div class="card-dialog-container">
+                    <div class="card-dialog">
+                        <div class="card-bang">
+                            <img class="card-bang-image" src="../images/bang_up.png" >
 
-                    <div class="card-bang-code"> 
-                        <a 
-                            id="promoLink" 
-                            class="card-bang-code-link-text" 
-                            href="https://ref.trade.re/pxc84wp9"
-                            target="_blank"
-                            rel="noreferrer"
-                            onClick="onRefLinkClicked('TradeRepublic');">
-                            <span>&#128279 </span>
-                            https://www.traderepublic...
-                        </a>
+                            <div class="card-bang-code"> 
+                                <a 
+                                    id="promoLink" 
+                                    class="card-bang-code-link-text" 
+                                    href="https://ref.trade.re/pxc84wp9"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    onClick="onRefLinkClicked('TradeRepublic');">
+                                    <span>&#128279 </span>
+                                    https://www.traderepublic...
+                                </a>
+                            </div>
+
+                            <img class="card-bang-image" src="../images/bang_down.png">
+                        </div>
                     </div>
-
-                    <img class="card-bang-image" src="../images/bang_down.png">
+                    <div id="card-dialog" onclick="" style="z-index: 9;" class="card-dialog">
+                        <div class="card-dialog-popup">
+                            <p class="popup-title">
+                                Bitte stellen Sie sicher, dass Sie die Trade Republic App herunterladen, bevor Sie auf den Gutschein-Link klicken.
+                            </p>
+                            <button type="button" class="ns-sign-up" onclick="onHideDialog();"><span>Zeig mir den Link</span></span></button> 
+                        </div>
+                    </div>
                 </div>
 
                 <div class="card-main-vote">&#128077<span style="font-weight: bold;"> 20</span></div>
@@ -138,7 +150,7 @@
                         <p id="ns-email-error" class="generic-error">Diese Email scheint ungültig zu sein. Bitte überprüfe sie und probiere es nochmal.</p>
                         <form id="ns-form">
                             <input id="ns-email-input" class="ns-email" placeholder="anne@ichwillgutschein.com" name="EMAIL" type="email">
-                            <button id="ns-signup-btn" type="button" class="ns-sign-up" onclick="onSignupClick();"><span>Sende mir Codes</span></span></button> 
+                            <button type="button" class="ns-sign-up" onclick="onSignupClick();"><span>Sende mir Codes</span></span></button> 
                         </form>
                         
                         <p class="in-page-ns-form-wrapper-title-link">
